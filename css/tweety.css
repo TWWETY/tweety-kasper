@@ -10,6 +10,7 @@
 html {
     scroll-behavior: smooth;
     scrollbar-width: none;
+
     &::-webkit-scrollbar {
         display: none;
     }
@@ -119,7 +120,7 @@ header {
             height: 100%;
             position: absolute;
             top: 0;
-            left: -20rem;
+            left: -50rem;
             width: 200rem;
             opacity: 0.5;
             z-index: -1;
@@ -524,6 +525,7 @@ main {
 }
 
 /** portfolio section */
+
 .portfolio {
     display: flex;
     flex-direction: column;
