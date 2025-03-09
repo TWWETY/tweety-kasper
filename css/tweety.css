@@ -316,7 +316,7 @@ details {
 main {
     height: 100vh;
     width: 100vw;
-    background: url(https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/landing.jpg) top right/cover no-repeat #311e1e;
+    background: url(/images/landing.jpg) top right/cover no-repeat var(--background);
     position: relative;
 
     &::before {
@@ -380,7 +380,6 @@ main {
         &.active {
             filter: brightness(1);
         }
-
     }
 
     input {
