@@ -315,7 +315,7 @@ details {
 main {
     height: 100vh;
     width: 100vw;
-    background: url(images/landing.jpg) top right/cover no-repeat var(--background);
+    background: url(../images/landing.jpg) top right/cover no-repeat var(--background);
     position: relative;
 
     &::before {
@@ -460,7 +460,7 @@ main {
 
 /** Design section */
 .design {
-    background: url(images/design-features.jpg) center/cover no-repeat;
+    background: url(../images/design-features.jpg) center/cover no-repeat;
     background-color: var(--secondary-color);
     margin: 2rem 0;
     position: relative;
@@ -740,7 +740,7 @@ main {
     padding: 7rem 0;
     text-align: center;
     position: relative;
-    background: url(images/stats.png) center/cover no-repeat;
+    background: url(../images/stats.png) center/cover no-repeat;
     width: 100%;
 
     &::before {
