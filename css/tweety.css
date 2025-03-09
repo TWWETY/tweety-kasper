@@ -119,7 +119,7 @@ header {
             height: 100%;
             position: absolute;
             top: 0;
-            left: -20rem;
+            left: -50rem;
             width: 200rem;
             opacity: 0.5;
             z-index: -1;
@@ -315,7 +315,7 @@ details {
 main {
     height: 100vh;
     width: 100vw;
-    background: url(https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/landing.jpg) top right/cover no-repeat #311e1e;
+    background: url(/images/landing.jpg) top right/cover no-repeat var(--background);
     position: relative;
 
     &::before {
@@ -379,7 +379,6 @@ main {
         &.active {
             filter: brightness(1);
         }
-
     }
 
     input {
@@ -524,6 +523,7 @@ main {
 }
 
 /** portfolio section */
+
 .portfolio {
     display: flex;
     flex-direction: column;
