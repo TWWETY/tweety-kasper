@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,14 +15,21 @@
     <!--* main css  -->
     <link rel="stylesheet" href="css/tweety.css" />
 
-    <title>Tweety | kasper</title>
+    <title>Tweety | template_2</title>
 </head>
-
 <body>
     <header>
         <div class="container">
-            <a href="#" class="logo"><img src="imgs/logo_modified.png" alt="logo"></a>
+            <a href="#" class="logo"><img src="images/logo.png" alt="logo"></a>
             <nav>
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#pricing">pricing</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
                 <details class="mobile">
                     <summary>
                         <i class="icon"><span></span><span></span><span></span></i>
@@ -37,21 +43,13 @@
                         <li><a href="#contact">contact</a></li>
                     </ul>
                 </details>
-                <ul>
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#services">services</a></li>
-                    <li><a href="#portfolio">portfolio</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#pricing">pricing</a></li>
-                    <li><a href="#contact">contact</a></li>
-                </ul>
                 <div class="search">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </nav>
         </div>
     </header>
-    <main>
+    <main id="home">
         <div class="text">
             <h2>Hello World!</h2>
             <h2> I'm TWEETY I Made This </h2>
@@ -69,12 +67,14 @@
         <input type="radio" name="page" value="page_2" class="circle fa-solid fa-circle" checked />
         <input type="radio" name="page" value="page_3" class="circle fa-solid fa-circle" />
     </main>
-    <section class="Services">
-        <h2 class="special-heading">Services</h2>
-        <p>
-            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
-            Mauris blandit aliquet elit, eget tincidunt.
-        </p>
+    <article class="Services" id="services">
+        <div class="special-heading">
+            <h2>Services</h2>
+            <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt.
+            </p>
+        </div>
         <div class="cad-box">
             <div class="card">
                 <i class="fa-solid fa-flask"></i>
@@ -110,7 +110,7 @@
                 </div>
             </div>
             <div class="card">
-                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <i class="fa-solid fa-pen-ruler"></i>
                 <div class="text">
                     <h3>Vorem amet intuitive</h3>
                     <p>
@@ -121,10 +121,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </article>
     <section class="design">
         <div class="container">
-            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/mobile.png" alt="mobile" />
+            <img src="/images/mobile.png" alt="mobile" />
         </div>
         <div class="text">
             <h2>Our Design Comes With...</h2>
@@ -148,86 +148,124 @@
     </section>
     <section class="portfolio" id="portfolio">
         <div class="container">
-            <h2 class="special-heading">portfolio</h2>
-            <p>
-                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
-                Mauris blandit aliquet elit, eget tincidunt.
-            </p>
+            <div class="special-heading">
+                <h2>portfolio</h2>
+                <p>
+                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                    Mauris blandit aliquet elit, eget tincidunt.
+                </p>
+            </div>
+            <ul>
+                <li><a href=""><label><input type="radio" name="portfolio" checked />all</label></a></li>
+                <li><a href=""><label><input type="radio" name="portfolio" />app</label></a></li>
+                <li><a href=""><label><input type="radio" name="portfolio" />photo</label></a></li>
+                <li><a href=""><label><input type="radio" name="portfolio" />web</label></a></li>
+                <li><a href=""><label><input type="radio" name="portfolio" />print</label></a></li>
+            </ul>
         </div>
-        <ul>
-            <li><a href=""><label><input type="radio" name="portfolio" checked />all</label></a></li>
-            <li><a href=""><label><input type="radio" name="portfolio" />app</label></a></li>
-            <li><a href=""><label><input type="radio" name="portfolio" />photo</label></a></li>
-            <li><a href=""><label><input type="radio" name="portfolio" />web</label></a></li>
-            <li><a href=""><label><input type="radio" name="portfolio" />print</label></a></li>
-        </ul>
         <div class="grid">
             <div class="image">
-                <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/shuffle-01.jpg"
-                    alt="project_photo1">
+                <img src="/images/shuffle-01.jpg" alt="project_photo1">
                 <div>
                     <h3>amazing photo</h3>
                     <p>ex project</p>
                 </div>
             </div>
             <div class="image">
-                <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/shuffle-02.jpg"
-                    alt="project_photo2">
+                <img src="/images/shuffle-02.jpg" alt="project_photo2">
                 <div>
                     <h3>amazing photo</h3>
                     <p>ex project</p>
                 </div>
             </div>
             <div class="image">
-                <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/shuffle-03.jpg"
-                    alt="project_photo3">
+                <img src="/images/shuffle-03.jpg" alt="project_photo3">
                 <div>
                     <h3>amazing photo</h3>
                     <p>ex project</p>
                 </div>
             </div>
             <div class="image">
-                <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/shuffle-04.jpg"
-                    alt="project_photo4">
+                <img src="/images/shuffle-04.jpg" alt="project_photo4">
                 <div>
                     <h3>amazing photo</h3>
                     <p>ex project</p>
                 </div>
             </div>
             <div class="image">
-                <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/shuffle-05.jpg"
-                    alt="project_photo5">
+                <img src="/images/shuffle-05.jpg" alt="project_photo5">
                 <div>
                     <h3>amazing photo</h3>
                     <p>ex project</p>
                 </div>
             </div>
             <div class="image">
-                <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/shuffle-06.jpg"
-                    alt="project_photo6">
+                <img src="/images/shuffle-06.jpg" alt="project_photo6">
                 <div>
                     <h3>amazing photo</h3>
                     <p>ex project</p>
                 </div>
             </div>
             <div class="image">
-                <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/shuffle-07.jpg"
-                    alt="project_photo7">
+                <img src="images/shuffle-07.jpg" alt="project_photo7">
                 <div>
                     <h3>amazing photo</h3>
                     <p>ex project</p>
                 </div>
             </div>
             <div class="image">
-                <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/shuffle-08.jpg"
-                    alt="project_photo8">
+                <img src="images/shuffle-08.jpg" alt="project_photo8">
                 <div>
                     <h3>amazing photo</h3>
                     <p>ex project</p>
                 </div>
             </div>
         </div>
-        <button type="button"><a href="#more">more</a></button>
+        <button type="button">more</button>
+    </section>
+    <section class="video">
+        <video src="/images/awesome-video.mp4" type="video/mp4" autoplay muted loop></video>
+        <div class="overlay">
+            <h2>Awesome Video</h2>
+            <p>it`s all you need</p>
+            <button type="button">see more</button>
+        </div>
+    </section>
+    <article class="about" id="about">
+        <div class="container">
+            <div class="special-heading">
+                <h2>about us</h2>
+                <p>
+                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                    Mauris blandit aliquet elit, eget tincidunt.
+                </p>
+            </div>
+            <img src="/images/about.png" alt="">
+        </div>
+    </article>
+    <section class="Stats">
+        <div class="container">
+            <div class="box">
+                <div class="circle"><i class="fa-solid fa-mug-hot"></i></div>
+                <h2>1,000+</h2>
+                <p>Coffee Drinks</p>
+            </div>
+            <div class="box">
+                <div class="circle"><i class="fa-solid fa-file"></i></div>
+                <h2>5+</h2>
+                <p>Completed Projects</p>
+            </div>
+            <div class="box">
+                <div class="circle"><i class="fa-solid fa-code"></i></div>
+                <h2>200+</h2>
+                <p>Coding hours</p>
+            </div>
+            <div class="box">
+                <div class="circle"><i class="fa-solid fa-gamepad"></i></div>
+                <h2>2000+</h2>
+                <p>gaming hours</p>
+            </div>
+        </div>
     </section>
 </body>
 
